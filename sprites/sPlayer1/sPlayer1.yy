@@ -23,7 +23,7 @@
   ],
   "name":"sPlayer1",
   "nineSlice":null,
-  "origin":7,
+  "origin":8,
   "parent":{
     "name":"Sprites",
     "path":"folders/Assets/Sprites.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":12,
+    "xorigin":24,
     "yorigin":24,
   },
   "swatchColours":null,
