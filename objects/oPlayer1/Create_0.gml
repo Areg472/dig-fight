@@ -1,0 +1,22 @@
+sprite_size = 18;
+
+destroy_obj = function (x, y, t) {
+    var o = instance_position(x, y, t);
+    if(o != noone) instance_destroy(o);
+}
+destroy_below = function () {
+    destroy_obj(x, y - 2, oGrassInside);
+    destroy_obj(x - 1, y - 2, oGrassInside);
+    destroy_obj(x, y - sprite_size - 2, oGrassInside);
+    destroy_obj(x - 1, y - sprite_size - 2, oGrassInside);
+}
+
+destroy_below();
+
+move = function (k, ax, ay) {
+    if keyboard_check(k) {
+        x += ax * sprite_size;
+        y += ay * sprite_size;
+    }
+    destroy_below();
+}
