@@ -36,6 +36,7 @@
     {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sBoudler","path":"sprites/sBoudler/sBoudler.yy",},},
+    {"id":{"name":"sBox1","path":"sprites/sBox1/sBox1.yy",},},
     {"id":{"name":"sCoin1","path":"sprites/sCoin1/sCoin1.yy",},},
     {"id":{"name":"sDiamond","path":"sprites/sDiamond/sDiamond.yy",},},
     {"id":{"name":"sEnemy1","path":"sprites/sEnemy1/sEnemy1.yy",},},
