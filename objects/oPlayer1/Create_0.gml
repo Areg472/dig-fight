@@ -13,13 +13,8 @@ destroy_below = function () {
 
 destroy_below();
 
-last_frame = 0;
 move = function (k, ax, ay) {
     if keyboard_check_pressed(k)
-        last_frame = 0;
-    if last_frame % 5 != 0 return;
-    if keyboard_check(k) {
 		move_and_collide(ax * sprite_size, ay * sprite_size, oSolid);
-    }
     destroy_below();
 }
