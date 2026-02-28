@@ -24,6 +24,7 @@
   "name":"DigFight",
   "resources":[
     {"id":{"name":"oBoulder","path":"objects/oBoulder/oBoulder.yy",},},
+    {"id":{"name":"oBox1","path":"objects/oBox1/oBox1.yy",},},
     {"id":{"name":"oCoin1","path":"objects/oCoin1/oCoin1.yy",},},
     {"id":{"name":"oDiamond","path":"objects/oDiamond/oDiamond.yy",},},
     {"id":{"name":"oEnemy1","path":"objects/oEnemy1/oEnemy1.yy",},},
