@@ -13,8 +13,17 @@ destroy_below = function () {
 
 destroy_below();
 
+move_and_collide_but_actually_good = function (ax, ay, o) {
+    ox = x;
+    oy = y;
+    var col = move_and_collide(ax, ay, o);
+    if array_length(col) != 0 {
+        x = ox;
+        y = oy;
+    }
+}
 move = function (k, ax, ay) {
     if keyboard_check_pressed(k)
-		move_and_collide(ax * sprite_size, ay * sprite_size, oSolid);
+		move_and_collide_but_actually_good(ax * sprite_size, ay * sprite_size, oSolid);
     destroy_below();
 }
