@@ -15,8 +15,7 @@ destroy_below();
 
 move = function (k, ax, ay) {
     if keyboard_check(k) {
-        x += ax * sprite_size;
-        y += ay * sprite_size;
+		move_and_collide(ax * sprite_size, ay * sprite_size, oSolid);
     }
     destroy_below();
 }
