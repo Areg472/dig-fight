@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Assets","folderPath":"folders/Assets.yy","name":"Assets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Assets/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Assets/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -22,6 +23,10 @@
   },
   "name":"DigFight",
   "resources":[
+    {"id":{"name":"oEnemy1","path":"objects/oEnemy1/oEnemy1.yy",},},
+    {"id":{"name":"oGrassInside","path":"objects/oGrassInside/oGrassInside.yy",},},
+    {"id":{"name":"oGrassTop","path":"objects/oGrassTop/oGrassTop.yy",},},
+    {"id":{"name":"oPlayer1","path":"objects/oPlayer1/oPlayer1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sEnemy1","path":"sprites/sEnemy1/sEnemy1.yy",},},
     {"id":{"name":"sGrassInside","path":"sprites/sGrassInside/sGrassInside.yy",},},
