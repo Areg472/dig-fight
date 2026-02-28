@@ -24,6 +24,8 @@
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sEnemy1","path":"sprites/sEnemy1/sEnemy1.yy",},},
+    {"id":{"name":"sEnemy2","path":"sprites/sEnemy2/sEnemy2.yy",},},
+    {"id":{"name":"sEnemy3","path":"sprites/sEnemy3/sEnemy3.yy",},},
     {"id":{"name":"sGrassInside","path":"sprites/sGrassInside/sGrassInside.yy",},},
     {"id":{"name":"sGrassTop","path":"sprites/sGrassTop/sGrassTop.yy",},},
     {"id":{"name":"sPlayer1","path":"sprites/sPlayer1/sPlayer1.yy",},},
