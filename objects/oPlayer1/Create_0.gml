@@ -6,9 +6,9 @@ destroy_obj = function (x, y, t) {
 }
 destroy_below = function () {
     destroy_obj(x, y - 2, oGrassInside);
-    destroy_obj(x - 1, y - 2, oGrassInside);
+    destroy_obj(x - sprite_size, y - 2, oGrassInside);
     destroy_obj(x, y - sprite_size - 2, oGrassInside);
-    destroy_obj(x - 1, y - sprite_size - 2, oGrassInside);
+    destroy_obj(x - sprite_size, y - sprite_size - 2, oGrassInside);
 }
 
 destroy_below();
