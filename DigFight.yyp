@@ -24,6 +24,8 @@
   "name":"DigFight",
   "resources":[
     {"id":{"name":"oEnemy1","path":"objects/oEnemy1/oEnemy1.yy",},},
+    {"id":{"name":"oEnemy2","path":"objects/oEnemy2/oEnemy2.yy",},},
+    {"id":{"name":"oEnemy3","path":"objects/oEnemy3/oEnemy3.yy",},},
     {"id":{"name":"oGrassInside","path":"objects/oGrassInside/oGrassInside.yy",},},
     {"id":{"name":"oGrassTop","path":"objects/oGrassTop/oGrassTop.yy",},},
     {"id":{"name":"oPlayer1","path":"objects/oPlayer1/oPlayer1.yy",},},
