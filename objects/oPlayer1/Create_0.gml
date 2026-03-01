@@ -24,5 +24,7 @@ move = function (k, ax, ay) {
     if ax < 0 image_xscale = 1;
     if ax > 0 image_xscale = -1;
         
+    audio_play_sound(sWalk, 0, false);
+        
     destroy_below(oGrassInside);
 }

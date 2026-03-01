@@ -86,5 +86,6 @@ hit_player = function(c) {
     if(c - player.hit < 90) return;
     player.hit = c;
     player.stat_health--;
+    audio_play_sound(sHurt, 0, false);
     if(player.stat_health <= 0) room_restart();
 }

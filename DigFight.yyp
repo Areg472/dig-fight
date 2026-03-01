@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Assets","folderPath":"folders/Assets.yy","name":"Assets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Assets/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Assets/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Assets/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -40,6 +41,10 @@
     {"id":{"name":"oPlayer1","path":"objects/oPlayer1/oPlayer1.yy",},},
     {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"sCoin","path":"sounds/sCoin/sCoin.yy",},},
+    {"id":{"name":"sExplosion","path":"sounds/sExplosion/sExplosion.yy",},},
+    {"id":{"name":"sHurt","path":"sounds/sHurt/sHurt.yy",},},
+    {"id":{"name":"sWalk","path":"sounds/sWalk/sWalk.yy",},},
     {"id":{"name":"sBg1","path":"sprites/sBg1/sBg1.yy",},},
     {"id":{"name":"sBoudler","path":"sprites/sBoudler/sBoudler.yy",},},
     {"id":{"name":"sBox1","path":"sprites/sBox1/sBox1.yy",},},

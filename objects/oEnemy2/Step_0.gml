@@ -5,6 +5,8 @@ if triggered == -1 {
     if player_near(x, y + sprite_size, max_dist_to_player)
         hit_player(step_counter);
     
+    audio_play_sound(sExplosion, 0, false);
+    
     destroy_around();
     instance_destroy();
 } else {
