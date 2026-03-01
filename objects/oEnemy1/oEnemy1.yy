@@ -10,8 +10,8 @@
     "path":"folders/Assets/Objects.yy",
   },
   "parentObjectId":{
-    "name":"oCommon",
-    "path":"objects/oCommon/oCommon.yy",
+    "name":"oEnemy3",
+    "path":"objects/oEnemy3/oEnemy3.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
