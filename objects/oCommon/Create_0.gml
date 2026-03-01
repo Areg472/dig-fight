@@ -32,10 +32,8 @@ try_step_path = function(o) {
     for(var i = 0; i < array_length(vis); i++)
         if(vis[i].id == o.id)
             return;
-        //x += o.x - o.sprite_xoffset - x + sprite_xoffset;
-        //y += o.y - o.sprite_yoffset - y + sprite_yoffset;
-        x = o.x;
-        y = o.y;
+    x += o.x + o.sprite_xoffset - x;
+    y += o.y + o.sprite_yoffset - y + 2 * sprite_size;
     array_push(vis, o);
     move_flag = true;
 }
@@ -47,10 +45,8 @@ step_path = function() {
     if array_length(vis) == 0 {
         var o = instance_nearest(x, y, oPath);
         if o == noone return [0, 0];
-        //x += o.x - o.sprite_xoffset - x + sprite_xoffset;
-        //y += o.y - o.sprite_yoffset - y + sprite_yoffset;
-        x = o.x;
-        y = o.y;
+        x += o.x + o.sprite_xoffset - x;
+        y += o.y + o.sprite_yoffset - y + 2 * sprite_size;
         array_push(vis, o);
         return [x - ox, y - oy];
     }
