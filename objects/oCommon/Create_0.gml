@@ -63,7 +63,7 @@ step_path = function() {
     array_foreach(o, try_step_path);
     if !move_flag {
         var a = array_last(vis);
-        array_delete(vis, 0, array_length(vis));
+        vis = [];
         array_push(vis, a);
         // return step_path();
     }
