@@ -74,9 +74,12 @@ step_path = function() {
     return [x - ox, y - oy];
 }
 
-player_near = function(x, y, r) {
-    var player = instance_nearest(x, y, oPlayer1);
+obj_near = function(x, y, r, o) {
+    var player = instance_nearest(x, y, o);
     return sqrt(power((player.x - x), 2) + power((player.y - y), 2)) < sprite_size * r;
+}
+player_near = function(x, y, r) {
+    return obj_near(x, y, r, oPlayer1);
 }
 hit_player = function(c) {
     var player = instance_nearest(x, y, oPlayer1);
