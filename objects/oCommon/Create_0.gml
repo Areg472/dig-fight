@@ -15,9 +15,14 @@ vis = [];
 move_flag = false;
 
 try_step_path = function(o) {
-    if o == noone || array_contains(vis, o) || move_flag return;
-    x += o.x + o.sprite_xoffset - x - sprite_xoffset;
-    y += o.y + o.sprite_yoffset - y - sprite_yoffset;
+    if o == noone || move_flag return;
+    for(var i = 0; i < array_length(vis); i++)
+        if(vis[i].id == o.id)
+            return;
+        //x += o.x - o.sprite_xoffset - x + sprite_xoffset;
+        //y += o.y - o.sprite_yoffset - y + sprite_yoffset;
+        x = o.x;
+        y = o.y;
     array_push(vis, o);
     move_flag = true;
 }
@@ -25,26 +30,37 @@ step_path = function() {
     var ox = x;
     var oy = y;
     
-    if array_length(vis) <= 1 {
+    show_debug_message(array_length(vis));
+    if array_length(vis) == 0 {
         var o = instance_nearest(x, y, oPath);
-        x += o.x + o.sprite_xoffset - x - sprite_xoffset;
-        y += o.y + o.sprite_yoffset - y - sprite_yoffset;
+        if o == noone return [0, 0];
+        //x += o.x - o.sprite_xoffset - x + sprite_xoffset;
+        //y += o.y - o.sprite_yoffset - y + sprite_yoffset;
+        x = o.x;
+        y = o.y;
         array_push(vis, o);
         return [x - ox, y - oy];
     }
-    var cx = array_last(vis).x, cy = array_last(vis).y;
+    var l = array_last(vis);
+    var cx = l.x, cy = l.y + sprite_size;
     var o = [
-        instance_position(cx - 1, cy, oPath),
-        instance_position(cx + 1, cy, oPath),
-        instance_position(cx, cy - 1, oPath),
-        instance_position(cx, cy + 1, oPath),
+        instance_place(cx - sprite_size, cy, oPath),
+        instance_place(cx + sprite_size, cy, oPath),
+        instance_place(cx, cy - sprite_size, oPath),
+        instance_place(cx, cy + sprite_size, oPath),
     ];
+    array_foreach(o, show_debug_message);
     move_flag = false;
     array_foreach(o, try_step_path);
     if !move_flag {
-        vis = [array_last(vis)];
-        return step_path();
+        var a = array_last(vis);
+        array_delete(vis, 0, array_length(vis));
+        array_push(vis, a);
+        // return step_path();
     }
     
+    show_debug_message(111);
+    show_debug_message(x - ox);
+    show_debug_message(y - oy);
     return [x - ox, y - oy];
 }

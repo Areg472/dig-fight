@@ -6,3 +6,5 @@ move = function () {
     destroy_below();
 }
 move();
+
+frame_counter = 0;

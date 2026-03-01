@@ -1,1 +1,1 @@
-move();
+if frame_counter++ % 10 == 0 move();
