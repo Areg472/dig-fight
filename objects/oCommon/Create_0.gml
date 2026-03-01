@@ -73,3 +73,8 @@ step_path = function() {
     show_debug_message(y - oy);
     return [x - ox, y - oy];
 }
+
+player_near = function(x, y, r) {
+    var player = instance_nearest(x, y, oPlayer1);
+    return sqrt(power((player.x - x), 2) + power((player.y - y), 2)) < sprite_size * r;
+}
