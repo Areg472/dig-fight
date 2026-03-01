@@ -1,6 +1,6 @@
 if triggered == -1 {
-    var player = instance_nearest(x, y, oPlayer1);
-    if sqrt(power((player.x - x), 2) + power((player.y - y), 2)) < max_dist_to_player
+    var player = instance_nearest(x, y + sprite_size, oPlayer1); // bc the anchor points are different
+    if sqrt(power((player.x - x), 2) + power((player.y - y - sprite_size), 2)) < max_dist_to_player
         triggered = step_counter;
 } else if step_counter - triggered >= 3 * 60 {
     destroy_around();
