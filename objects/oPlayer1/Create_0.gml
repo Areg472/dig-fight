@@ -3,6 +3,8 @@ stat_health = 3;
 hit = -infinity;
 frame_counter = 0;
 stat_coins = 0;
+won = false;
+won_at = 0;
 
 destroy_below(oGrassInside);
 
