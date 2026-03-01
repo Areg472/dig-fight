@@ -46,6 +46,7 @@
     {"id":{"name":"sFlag","path":"sprites/sFlag/sFlag.yy",},},
     {"id":{"name":"sGrassInside","path":"sprites/sGrassInside/sGrassInside.yy",},},
     {"id":{"name":"sGrassTop","path":"sprites/sGrassTop/sGrassTop.yy",},},
+    {"id":{"name":"sHeart1","path":"sprites/sHeart1/sHeart1.yy",},},
     {"id":{"name":"sPlayer1","path":"sprites/sPlayer1/sPlayer1.yy",},},
   ],
   "resourceType":"GMProject",
