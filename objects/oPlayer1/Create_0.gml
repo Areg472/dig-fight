@@ -1,6 +1,6 @@
 event_inherited();
 
-destroy_below();
+destroy_below(oGrassInside);
 
 move_and_collide_but_actually_good = function (ax, ay, o) {
     ox = x;
@@ -18,5 +18,5 @@ move = function (k, ax, ay) {
     if ax < 0 image_xscale = 1;
     if ax > 0 image_xscale = -1;
         
-    destroy_below();
+    destroy_below(oGrassInside);
 }

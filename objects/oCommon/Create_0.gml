@@ -4,11 +4,24 @@ destroy_obj = function (x, y, t) {
     var o = instance_position(x, y, t);
     if(o != noone) instance_destroy(o);
 }
-destroy_below = function () {
-    destroy_obj(x, y - 2, oGrassInside);
-    destroy_obj(x - sprite_size, y - 2, oGrassInside);
-    destroy_obj(x, y - sprite_size - 2, oGrassInside);
-    destroy_obj(x - sprite_size, y - sprite_size - 2, oGrassInside);
+destroy_below = function (o) {
+    destroy_obj(x, y - 2, o);
+    destroy_obj(x - sprite_size, y - 2, o);
+    destroy_obj(x, y - sprite_size - 2, o);
+    destroy_obj(x - sprite_size, y - sprite_size - 2, o);
+}
+destroy_below_mult = function (a) {
+    array_foreach(a, destroy_below);
+}
+destroy_around = function () {
+    x -= sprite_size;
+    destroy_below_mult([oGrassInside, oBox1]);
+    x += 2 * sprite_size;
+    destroy_below_mult([oGrassInside, oBox1]);
+    y += 2 * sprite_size;
+    destroy_below_mult([oGrassInside, oBox1]);
+    x -= 2 * sprite_size;
+    destroy_below_mult([oGrassInside, oBox1]);
 }
 
 vis = [];
