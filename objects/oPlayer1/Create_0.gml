@@ -1,4 +1,8 @@
 event_inherited();
+stat_health = 3;
+hit = -infinity;
+frame_counter = 0;
+stat_coins = 0;
 
 destroy_below(oGrassInside);
 

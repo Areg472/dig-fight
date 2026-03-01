@@ -3,7 +3,7 @@ if triggered == -1 {
         triggered = step_counter;
 } else if step_counter - triggered >= 3 * 60 {
     if player_near(x, y + sprite_size, max_dist_to_player)
-        room_restart();
+        hit_player(step_counter);
     
     destroy_around();
     instance_destroy();

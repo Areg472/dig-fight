@@ -78,3 +78,10 @@ player_near = function(x, y, r) {
     var player = instance_nearest(x, y, oPlayer1);
     return sqrt(power((player.x - x), 2) + power((player.y - y), 2)) < sprite_size * r;
 }
+hit_player = function(c) {
+    var player = instance_nearest(x, y, oPlayer1);
+    if(c - player.hit < 90) return;
+    player.hit = c;
+    player.stat_health--;
+    if(player.stat_health <= 0) room_restart();
+}
