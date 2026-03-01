@@ -23,7 +23,11 @@ move_and_collide_but_actually_good = function (ax, ay, o) {
     }
 }
 move = function (k, ax, ay) {
-    if keyboard_check_pressed(k)
-		move_and_collide_but_actually_good(ax * sprite_size, ay * sprite_size, oSolid);
+    if !keyboard_check_pressed(k) return;
+        
+    move_and_collide_but_actually_good(ax * sprite_size, ay * sprite_size, oSolid);
+    if ax < 0 image_xscale = 1;
+    if ax > 0 image_xscale = -1;
+        
     destroy_below();
 }
