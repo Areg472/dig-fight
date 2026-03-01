@@ -9,7 +9,10 @@
     "name":"Objects",
     "path":"folders/Assets/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oCommon",
+    "path":"objects/oCommon/oCommon.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
