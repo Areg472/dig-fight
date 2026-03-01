@@ -23,6 +23,7 @@
   },
   "name":"DigFight",
   "resources":[
+    {"id":{"name":"oBg1","path":"objects/oBg1/oBg1.yy",},},
     {"id":{"name":"oBoulder","path":"objects/oBoulder/oBoulder.yy",},},
     {"id":{"name":"oBox1","path":"objects/oBox1/oBox1.yy",},},
     {"id":{"name":"oCoin1","path":"objects/oCoin1/oCoin1.yy",},},
@@ -36,6 +37,7 @@
     {"id":{"name":"oPlayer1","path":"objects/oPlayer1/oPlayer1.yy",},},
     {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"sBg1","path":"sprites/sBg1/sBg1.yy",},},
     {"id":{"name":"sBoudler","path":"sprites/sBoudler/sBoudler.yy",},},
     {"id":{"name":"sBox1","path":"sprites/sBox1/sBox1.yy",},},
     {"id":{"name":"sCoin1","path":"sprites/sCoin1/sCoin1.yy",},},
